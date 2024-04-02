@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./mediaqueries.css" />
   </head>
   <body>
-    <!-- navigation bar -->
+    <!-- NAV BAR -->
     <nav id="desktop-nav">
       <div class="logo">Akash Das</div>
       <div>
@@ -37,7 +37,7 @@
         </div>
       </div>
     </nav>
-    <!-- profile -->
+    <!-- PROFILE -->
     <section id="profile">
       <div class="profile-pic">
         <img src="./resources/profile-pic.jpg" alt="profile pic" />
@@ -46,25 +46,67 @@
         <p class="hello">Hello, I'm</p>
         <h1 class="name">Akash Das</h1>
         <p class="profession">Software Engineer</p>
-      </div>
-      <div class="btn-container">
-        <button class="cv">
-          <a
-            href="https://dasakash26.github.io/My_Resume/"
-            target="_blank"
-            draggable="true"
-            >View CV</a
+        <div class="btn-container">
+          <button
+            class="btn cv"
+            onclick="window.open('https://dasakash26.github.io/My_Resume/')"
           >
-        </button>
-        <button class="contact me"><a href="#contact">Contact Me</a></button>
+            VIEW CV
+          </button>
+          <button class="btn contact-me" onclick="location.href='./#contact'">
+            CONTACT ME
+          </button>
+        </div>
+        <div id="socials">
+          <a href="https://www.linkedin.com/in/dasakash26/" target="_blank"
+            ><img
+              src="./resources/linkedin.png"
+              alt="linkedin logo"
+              class="icon"
+          /></a>
+          <a href="https://github.com/dasakash26" target="_blank"
+            ><img src="./resources/github.png" alt="github logo" class="icon"
+          /></a>
+        </div>
       </div>
-      <div id="socials">
-        <a href=".."
-          ><img src="./resources/linkedin.png" alt="linkedin logo" class="icon"
-        /></a>
-        <a href=".."
-          ><img src="./resources/github.png" alt="github logo" class="icon"
-        /></a>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="heading">
+        <p>Get To Know More</p>
+        <h1>About Me</h1>
+      </div>
+      <div class="about-me">
+        <div class="about-info">
+          <div class="experience">
+            <img src="./resources/experience.png" alt="experience logo" />
+            <h3>Experience</h3>
+            <p>1+ years <br />Frontend Development</p>
+          </div>
+          <div class="education">
+            <img src="./resources/education.png" alt="education logo" />
+            <h3>Education</h3>
+            <p>
+              Undergraduate,<br />
+              Bachelor of Engineering <br />
+              in Information Technology
+            </p>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Akash Das, an enthusiastic IT undergraduate currently pursuing
+              my Bachelor of Engineering in Information Technology at Jadavpur
+              University. With a fervent interest in competitive programming,
+              web development, cybersecurity, and artificial
+              intelligence/machine learning, I'm driven by the endless
+              possibilities these fields offer in shaping the future of
+              technology.
+            </p>
+          </div>
+        </div>
+        <div class="about-pic">
+          <img src="./resources/about-pic.png" alt="" />
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
